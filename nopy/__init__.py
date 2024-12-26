@@ -1,4 +1,8 @@
 class Nope:
+    @property
+    def __class__(self):
+        return Nope
+
     def __getattr__(self, name):
         return self
 
